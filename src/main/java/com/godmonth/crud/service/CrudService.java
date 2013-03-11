@@ -5,7 +5,9 @@ import java.util.List;
 import com.godmonth.crud.model.LongIdModel;
 
 public interface CrudService<T extends LongIdModel> {
-	void save(T t);
+	T save(T t);
+
+	void save2(T t);
 
 	void delete(Long id);
 
